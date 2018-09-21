@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/bulma/css/bulma.css">
+</head>
+
+<body>
+
+
+
+<section class="hero is-primary">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title">
+        Login
+      </h1>
+      <h2 class="subtitle">
+        
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<form onsubmit="return myFunction()">
+ <section class="section">
+    <div class"container">
+        <div class="columns">
+            <div class="column">  
+                
+            </div>
+             <div class="column">  
+                
+            </div>
+            <div class="column">  
+                <br><br><br>
+<div class="field">
+  <label class="label">UserName</label>
+  <div class="control">
+    <input class="input" type="text" id="username" name="username"  placeholder="" required>
+  </div>
+    </div>
+
+    <div class="field">
+  <label class="label">Password</label>
+  <div class="control">
+    <input class="input" type="password" id="password" name="password"  placeholder="" required>
+  </div>
+    </div>
+ <div class="field">
+  <label class="label">AutoBot</label>
+  <div class="control">
+    <input class="input" type="text" id="Auto" placeholder="Fill Number">
+         
+
+  </div>
+    </div>
+
+    <div class="field">
+  <div class="control">
+      
+     <a href="forgetPass.html">Forget Password?</a>
+  </div>
+</div>
+
+<a class="button is-fullwidth is-success"  onclick= check(this.form)>Login</a>
+            </div>
+             <div class="column">  
+                
+            </div>
+            <div class="column">  
+                
+            </div>
+
+
+
+
+        </div>
+    </div>
+</section>
+</form>
+
+
+
+
+<script type="text/javascript">
+        var user = document.getElementById("username").value;
+        var newpassword;
+
+        function registoTXT() {
+            newuser = document.getElementById('inputUser').value;
+            newpassword = document.getElementById('inputPassword').value;
+            alert("Utilizador Registado!");
+        }
+
+        function check(form) {
+            var userName = localStorage.getItem("username");
+            var passWord = localStorage.getItem("password");
+            console.log(userName,passWord,form.username.value,form.password.value)
+            if ((form.username.value == "admin" && form.password.value == "1234")) {
+              href="login.html"
+                
+            }
+        }
+    </script>
+</body>
+
+</html>
